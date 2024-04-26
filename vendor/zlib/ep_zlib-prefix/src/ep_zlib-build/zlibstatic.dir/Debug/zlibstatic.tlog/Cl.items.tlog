@@ -1,0 +1,15 @@
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\adler32.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\adler32.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\compress.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\compress.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\crc32.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\crc32.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\deflate.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\deflate.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzclose.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\gzclose.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzlib.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\gzlib.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzread.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\gzread.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzwrite.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\gzwrite.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inflate.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\inflate.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\infback.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\infback.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inftrees.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\inftrees.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inffast.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\inffast.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\trees.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\trees.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\uncompr.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\uncompr.obj
+D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\zutil.c;D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zlibstatic.dir\Debug\zutil.obj

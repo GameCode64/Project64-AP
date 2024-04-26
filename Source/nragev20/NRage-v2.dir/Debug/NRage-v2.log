@@ -1,0 +1,110 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/nragev20/CMakeLists.txt
+  Debug.cpp
+D:\Projects\Project64-AP\Source\nragev20\Debug.cpp(61,26): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
+  DirectInput.cpp
+D:\Projects\Project64-AP\Source\nragev20\settings.h(26,1): warning C4005: 'DIRECTINPUT_VERSION': macro redefinition
+  (compiling source file 'DirectInput.cpp')
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h(48,1):
+  see previous definition of 'DIRECTINPUT_VERSION'
+  
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  FileAccess.cpp
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1035,31): warning C4090: '=': different '__unaligned' qualifiers
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 4 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 5 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 6 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 7 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 8 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 9 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34): warning C4477: 'sscanf' : format string '%02hX' requires an argument of type 'unsigned short *', but variadic argument 10 has type 'unsigned char *'
+  D:\Projects\Project64-AP\Source\nragev20\FileAccess.cpp(1479,34):
+  consider using '%hhX' in the format string
+  
+  GBCart.cpp
+  Interface.cpp
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(160,30): warning C4244: '=': conversion from 'UINT_PTR' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(255,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(313,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(329,36): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(409,30): warning C4244: '=': conversion from 'UINT_PTR' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1081,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1087,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1132,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1136,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1473,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1476,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1479,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1482,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1567,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1685,38): warning C4244: '=': conversion from 'LPARAM' to 'int', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1728,68): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1771,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1840,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1844,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1848,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1853,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+  Transferpak enabled in Interface
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1859,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+  Voicepak enabled in Interface
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1875,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1876,85): warning C4244: '=': conversion from 'LRESULT' to 'unsigned int', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1900,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1910,60): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1913,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1925,56): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(1944,28): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2109,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2239,59): warning C4244: '=': conversion from 'LPARAM' to 'int', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2285,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2460,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2461,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2570,24): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2590,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2625,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(2629,32): warning C4244: '=': conversion from 'LRESULT' to 'long', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3675,68): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3676,68): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3677,66): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3678,66): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3679,66): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+D:\Projects\Project64-AP\Source\nragev20\Interface.cpp(3680,66): warning C4838: conversion from 'size_t' to 'int' requires a narrowing conversion
+  International.cpp
+D:\Projects\Project64-AP\Source\nragev20\International.cpp(144,10): warning C4996: 'GetVersionExW': was declared deprecated
+  NRagePluginV2.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+D:\Projects\Project64-AP\Source\nragev20\settings.h(26,1): warning C4005: 'DIRECTINPUT_VERSION': macro redefinition
+  (compiling source file 'NRagePluginV2.cpp')
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h(48,1):
+  see previous definition of 'DIRECTINPUT_VERSION'
+  
+D:\Projects\Project64-AP\Source\nragev20\NRagePluginV2.cpp(250,17): warning C4244: 'initializing': conversion from 'INT_PTR' to 'int', possible loss of data
+  PakIO.cpp
+  Driver fix for rumble with Adaptoid enabled
+  Addresscheck for Pak-Reads active
+  Addresscheck for Pak-Writes active
+D:\Projects\Project64-AP\Source\nragev20\PakIO.cpp(968,20): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  XInputController.cpp
+D:\Projects\Project64-AP\Source\nragev20\XInputController.cpp(192,55): warning C4244: '=': conversion from 'ULONGLONG' to 'unsigned int', possible loss of data
+D:\Projects\Project64-AP\Source\nragev20\XInputController.cpp(694,48): warning C4244: 'argument': conversion from 'LRESULT' to 'int', possible loss of data
+  Generating Code...
+     Creating library D:/Projects/Project64-AP/Source/nragev20/Debug/NRage-v2.lib and object D:/Projects/Project64-AP/Source/nragev20/Debug/NRage-v2.exp
+  NRage-v2.vcxproj -> D:\Projects\Project64-AP\Source\nragev20\Debug\NRage-v2.dll
+  Copying NRage-v2

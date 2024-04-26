@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lctype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ldebug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ldo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ldump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lgc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\llex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lobject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lopcodes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ltable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ltm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lundump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lvm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lzio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lauxlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lbaselib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lcorolib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ldblib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\liolib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lmathlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\loadlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\loslib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lstrlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\ltablib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\lutf8lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\src\linit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B2BE6C3C-C9C5-3AA9-9777-B6F929BA3EC6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\VENDOR\MINIZIP\EP_MINIZIP-PREFIX\SRC\EP_MINIZIP-BUILD\CMAKEFILES\F502B15A6E14BB59EB75A084497429B1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -BD:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/minizip.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

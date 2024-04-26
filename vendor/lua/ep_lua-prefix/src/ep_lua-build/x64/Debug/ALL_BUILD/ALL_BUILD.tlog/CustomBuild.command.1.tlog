@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\VENDOR\LUA\EP_LUA-PREFIX\SRC\EP_LUA\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua -BD:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build --check-stamp-file D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

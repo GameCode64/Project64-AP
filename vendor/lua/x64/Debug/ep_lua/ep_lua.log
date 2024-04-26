@@ -1,0 +1,81 @@
+﻿  Creating directories for 'ep_lua'
+  Building Custom Rule D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt
+  Performing download step (download, verify and extract) for 'ep_lua'
+  -- File already exists but no hash specified (use URL_HASH):
+    file='D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/lua-5.4.4.tar.gz'
+  Old file will be removed and new file downloaded from URL.
+  -- Downloading...
+     dst='D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/lua-5.4.4.tar.gz'
+     timeout='none'
+     inactivity timeout='none'
+  -- Using src='https://www.lua.org/ftp/lua-5.4.4.tar.gz'
+  -- [download 4% complete]
+  -- [download 9% complete]
+  -- [download 14% complete]
+  -- [download 18% complete]
+  -- [download 23% complete]
+  -- [download 27% complete]
+  -- [download 32% complete]
+  -- [download 36% complete]
+  -- [download 41% complete]
+  -- [download 45% complete]
+  -- [download 50% complete]
+  -- [download 54% complete]
+  -- [download 59% complete]
+  -- [download 63% complete]
+  -- [download 68% complete]
+  -- [download 73% complete]
+  -- [download 77% complete]
+  -- [download 82% complete]
+  -- [download 86% complete]
+  -- [download 91% complete]
+  -- [download 95% complete]
+  -- [download 100% complete]
+  -- Downloading... done
+  -- extracting...
+       src='D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/lua-5.4.4.tar.gz'
+       dst='D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua'
+  -- extracting... [tar xfz]
+  -- extracting... [analysis]
+  -- extracting... [rename]
+  -- extracting... [clean up]
+  -- extracting... done
+  No update step for 'ep_lua'
+  Performing patch step for 'ep_lua'
+  Performing configure step for 'ep_lua'
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22631.
+  -- Configuring done (0.0s)
+  -- Generating done (0.1s)
+  -- Build files have been written to: D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build
+  Performing build step for 'ep_lua'
+  MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+  
+    1>Checking Build System
+    Building Custom Rule D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+    liblua.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\lua54d.dll
+    Building Custom Rule D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+    liblua_static.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\liblua_staticd.lib
+    Building Custom Rule D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+    lua.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\lua.exe
+    Building Custom Rule D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+    luac.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\luac.exe
+    Building Custom Rule D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+  Performing install step for 'ep_lua'
+  MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+  
+    liblua.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\lua54d.dll
+    liblua_static.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\liblua_staticd.lib
+    lua.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\lua.exe
+    luac.vcxproj -> D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build\Debug\luac.exe
+    1>
+    -- Install configuration: "Debug"
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/bin/lua.exe
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/bin/luac.exe
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/lib/lua54d.lib
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/bin/lua54d.dll
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/lua.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/lualib.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/lauxlib.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/luaconf.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/lua.hpp
+  Completed 'ep_lua'

@@ -1,0 +1,9 @@
+D:/Projects/Project64-AP/_vendor/bin/lua.exe
+D:/Projects/Project64-AP/_vendor/bin/luac.exe
+D:/Projects/Project64-AP/_vendor/lib/lua54d.lib
+D:/Projects/Project64-AP/_vendor/bin/lua54d.dll
+D:/Projects/Project64-AP/_vendor/include/lua.h
+D:/Projects/Project64-AP/_vendor/include/lualib.h
+D:/Projects/Project64-AP/_vendor/include/lauxlib.h
+D:/Projects/Project64-AP/_vendor/include/luaconf.h
+D:/Projects/Project64-AP/_vendor/include/lua.hpp

@@ -1,0 +1,32 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/Project64-input/CMakeLists.txt
+  CProject64Input.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'CProject64Input.cpp')
+  
+  DeviceNotification.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'DeviceNotification.cpp')
+  
+  DirectInput.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'DirectInput.cpp')
+  
+  InputConfigUI.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'InputConfigUI.cpp')
+  
+  InputMain.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'InputMain.cpp')
+  
+  InputSettings.cpp
+  OptionsUI.cpp
+  wtl-BitmapPicture.cpp
+  wtl-ScanButton.cpp
+D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h(14,9): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  (compiling source file 'wtl-ScanButton.cpp')
+  
+  Generating Code...
+     Creating library D:/Projects/Project64-AP/Source/Project64-input/Debug/Project64-Input.lib and object D:/Projects/Project64-AP/Source/Project64-input/Debug/Project64-Input.exp
+  Project64-Input.vcxproj -> D:\Projects\Project64-AP\Source\Project64-input\Debug\Project64-Input.dll
+  Copying Input

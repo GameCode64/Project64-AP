@@ -1,0 +1,13 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/Project64-audio/CMakeLists.txt
+  AudioMain.cpp
+  AudioSettings.cpp
+  ConfigUI.cpp
+D:\Projects\Project64-AP\Source\Project64-audio\ConfigUI.cpp(196,74): warning C4244: 'argument': conversion from 'DWORD_PTR' to 'unsigned int', possible loss of data
+  DirectSound.cpp
+  OpenSLES.cpp
+  SoundBase.cpp
+  trace.cpp
+  Generating Code...
+     Creating library D:/Projects/Project64-AP/Source/Project64-audio/Debug/Project64-Audio.lib and object D:/Projects/Project64-AP/Source/Project64-audio/Debug/Project64-Audio.exp
+  Project64-Audio.vcxproj -> D:\Projects\Project64-AP\Source\Project64-audio\Debug\Project64-Audio.dll
+  Copying Audio

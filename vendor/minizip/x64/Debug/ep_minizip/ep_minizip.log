@@ -1,0 +1,113 @@
+﻿  Creating directories for 'ep_minizip'
+  Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt
+  Performing download step (download, verify and extract) for 'ep_minizip'
+  -- File already exists but no hash specified (use URL_HASH):
+    file='D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/3.0.10.tar.gz'
+  Old file will be removed and new file downloaded from URL.
+  -- Downloading...
+     dst='D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/3.0.10.tar.gz'
+     timeout='none'
+     inactivity timeout='none'
+  -- Using src='https://github.com/zlib-ng/minizip-ng/archive/refs/tags/3.0.10.tar.gz'
+  -- Downloading... done
+  -- extracting...
+       src='D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/3.0.10.tar.gz'
+       dst='D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip'
+  -- extracting... [tar xfz]
+  -- extracting... [analysis]
+  -- extracting... [rename]
+  -- extracting... [clean up]
+  -- extracting... done
+  No update step for 'ep_minizip'
+  No patch step for 'ep_minizip'
+  Performing configure step for 'ep_minizip'
+  -- Using CMake version 3.29.2
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22631.
+  -- Using ZLIB 1.3.1
+  -- Using CryptoAPI
+  -- The following features have been enabled:
+  
+   * MZ_COMPAT, Enables compatibility layer
+   * MZ_ZLIB, Enables ZLIB compression
+   * MZ_PKCRYPT, Enables PKWARE traditional encryption
+   * MZ_WZAES, Enables WinZIP AES encryption
+  
+  -- The following features have been disabled:
+  
+   * MZ_BZIP2, Enables BZIP2 compression
+   * MZ_LZMA, Enables LZMA & XZ compression
+   * MZ_ZSTD, Enables ZSTD compression
+   * MZ_LIBCOMP, Enables Apple compression
+   * MZ_FETCH_LIBS, Enables fetching third-party libraries if not found
+   * MZ_FORCE_FETCH_LIBS, Enables fetching third-party libraries always
+   * MZ_OPENSSL, Enables OpenSSL for encryption
+   * MZ_BCRYPT, Enables Win32 Crypto API Next Generation (CNG)
+   * MZ_LIBBSD, Builds with libbsd crypto random
+   * MZ_SIGNING, Enables zip signing support
+   * MZ_ICONV, Enables iconv string encoding conversion library
+   * MZ_COMPRESS_ONLY, Only support compression
+   * MZ_DECOMPRESS_ONLY, Only support decompression
+   * MZ_FILE32_API, Builds using posix 32-bit file api
+   * MZ_BUILD_TESTS, Builds minizip test executable
+   * MZ_BUILD_UNIT_TESTS, Builds minizip unit test project
+   * MZ_BUILD_FUZZ_TESTS, Builds minizip fuzzer executables
+   * MZ_CODE_COVERAGE, Builds with code coverage flags
+  
+  -- Configuring done (0.2s)
+  -- Generating done (0.1s)
+  -- Build files have been written to: D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+  Performing build step for 'ep_minizip'
+  MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+  
+    1>Checking Build System
+    Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/CMakeLists.txt
+    mz_crypt.c
+    mz_os.c
+    mz_strm.c
+    mz_strm_buf.c
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_os.c(286,19): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details. [D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.vcxproj]
+    mz_strm_mem.c
+    mz_strm_split.c
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_split.c(184,22): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details. [D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.vcxproj]
+    mz_zip.c
+    mz_zip_rw.c
+    mz_strm_zlib.c
+    mz_os_win32.c
+    mz_strm_os_win32.c
+    mz_crypt_win32.c
+    mz_strm_pkcrypt.c
+    mz_strm_wzaes.c
+    mz_compat.c
+    Generating Code...
+    minizip.vcxproj -> D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\Debug\libminizip.lib
+    Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/CMakeLists.txt
+  Performing install step for 'ep_minizip'
+  MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+  
+    minizip.vcxproj -> D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\Debug\libminizip.lib
+    1>
+    -- Install configuration: "Debug"
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/libminizip.lib
+    -- Old export file "D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip.cmake" will be replaced.  Removing files [D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-config-version.cmake, D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-config.cmake, D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-debug.cmake].
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip.cmake
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-debug.cmake
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-config-version.cmake
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/cmake/minizip/minizip-config.cmake
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_os.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_crypt.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_buf.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_mem.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_split.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_os.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_zip.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_zip_rw.h
+    -- Installing: D:/Projects/Project64-AP/_vendor/include/mz_strm_zlib.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_pkcrypt.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_strm_wzaes.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/mz_compat.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/zip.h
+    -- Up-to-date: D:/Projects/Project64-AP/_vendor/include/unzip.h
+    -- Installing: D:/Projects/Project64-AP/_vendor/lib/pkgconfig/minizip.pc
+  Completed 'ep_minizip'

@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\VENDOR\ZLIB\EP_ZLIB-PREFIX\SRC\EP_ZLIB-BUILD\CMAKEFILES\82A5F274B003069D18F7AA86930A9E56\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib -BD:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-build/zlib.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

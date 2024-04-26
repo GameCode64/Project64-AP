@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\VENDOR\ZLIB\EP_ZLIB-PREFIX\SRC\EP_ZLIB-BUILD\CMAKEFILES\82A5F274B003069D18F7AA86930A9E56\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

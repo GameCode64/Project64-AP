@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\VENDOR\MINIZIP\EP_MINIZIP-PREFIX\SRC\EP_MINIZIP-BUILD\CMAKEFILES\F502B15A6E14BB59EB75A084497429B1\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,147 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/Project64-core/CMakeLists.txt
+  7zip.cpp
+D:\Projects\Project64-AP\Source\Project64-core\3rdParty\7zip.cpp(173,43): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\3rdParty\7zip.cpp(215,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\3rdParty\7zip.cpp(233,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  AppInit.cpp
+  Logging.cpp
+D:\Projects\Project64-AP\Source\Project64-core\Logging.cpp(592,34): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  MemoryExceptionFilter.cpp
+  Language.cpp
+  EmulationThread.cpp
+  Enhancement.cpp
+  EnhancementFile.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementFile.cpp(381,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementFile.cpp(419,48): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  EnhancementList.cpp
+  Enhancements.cpp
+  FramePerSecond.cpp
+  InterpreterCPU.cpp
+  InterpreterOps.cpp
+  InterpreterOps32.cpp
+  Audio.cpp
+  Disk.cpp
+  Dma.cpp
+  Eeprom.cpp
+  FlashRam.cpp
+  GBCart.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\GBCart.cpp(702,30): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\GBCart.cpp(745,38): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\GBCart.cpp(784,40): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  Generating Code...
+  Compiling...
+  MemoryVirtualMem.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\MemoryVirtualMem.cpp(103,62): warning C4312: 'type cast': conversion from 'uint32_t' to 'void *' of greater size
+  Mempak.cpp
+  OpcodeName.cpp
+  PifRam.cpp
+  Register.cpp
+  Rumblepak.cpp
+  Sram.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(52,40): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(52,40): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(62,37): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(62,37): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(62,25): warning C4312: 'type cast': conversion from 'uint32_t' to 'uint8_t *' of greater size
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(85,40): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(85,40): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(95,38): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(95,38): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp(95,26): warning C4312: 'type cast': conversion from 'uint32_t' to 'uint8_t *' of greater size
+  SystemEvents.cpp
+  SystemTiming.cpp
+  TLB.cpp
+  Transferpak.cpp
+  N64Disk.cpp
+  N64Rom.cpp
+  N64System.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1378,43): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1378,43): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1544,47): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1544,47): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1546,95): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp(1546,95): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+  Profiling.cpp
+  ArmOps.cpp
+  ArmRecompilerOps.cpp
+  ArmRegInfo.cpp
+  CodeBlock.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\CodeBlock.cpp(134,67): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  CodeSection.cpp
+  Generating Code...
+  Compiling...
+  FunctionInfo.cpp
+  FunctionMap.cpp
+  LoopAnalysis.cpp
+  Recompiler.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(997,34): warning C4311: 'type cast': pointer truncation from 'CCompiledFunc::Func' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(997,34): warning C4302: 'type cast': truncation from 'CCompiledFunc::Func' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(998,30): warning C4312: 'type cast': conversion from 'uint32_t' to 'uint8_t *' of greater size
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1005,19): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1005,19): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1119,25): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1119,25): warning C4302: 'type cast': truncation from 'uint8_t *' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4311: 'type cast': pointer truncation from '_Ty1' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4311:         with
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4311:         [
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4311:             _Ty1=const CCompiledFunc::Func
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4311:         ]
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4302: 'type cast': truncation from '_Ty1' to 'uint32_t'
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4302:         with
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4302:         [
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4302:             _Ty1=const CCompiledFunc::Func
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp(1137,36): warning C4302:         ]
+  RecompilerCodeLog.cpp
+  RecompilerMemory.cpp
+D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerMemory.cpp(79,19): warning C4244: 'initializing': conversion from '__int64' to 'uint32_t', possible loss of data
+  RegBase.cpp
+  SectionInfo.cpp
+  x86RecompilerOps.cpp
+  x86RegInfo.cpp
+  x86ops.cpp
+  SpeedLimiter.cpp
+  SystemGlobals.cpp
+  AudioPlugin.cpp
+  ControllerPlugin.cpp
+  GFXPlugin.cpp
+  Plugin.cpp
+  PluginBase.cpp
+  RSPPlugin.cpp
+  RomList.cpp
+D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp(131,25): warning C4267: 'initializing': conversion from 'size_t' to 'int32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp(306,41): warning C4267: 'initializing': conversion from 'size_t' to 'int32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp(717,25): warning C4267: 'initializing': conversion from 'size_t' to 'int32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp(741,21): warning C4267: 'initializing': conversion from 'size_t' to 'int32_t', possible loss of data
+D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp(763,81): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Compiling...
+  Settings.cpp
+D:\Projects\Project64-AP\Source\Project64-core\Settings.cpp(845,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  DebugSettings.cpp
+  GameSettings.cpp
+  LoggingSettings.cpp
+  N64SystemSettings.cpp
+  RecompilerSettings.cpp
+  SettingsType-Application.cpp
+  SettingsType-ApplicationIndex.cpp
+  SettingsType-ApplicationPath.cpp
+  SettingsType-GameSetting.cpp
+  SettingsType-GameSettingIndex.cpp
+  SettingsType-RDBCpuType.cpp
+  SettingsType-RDBOnOff.cpp
+  SettingsType-RDBRamSize.cpp
+  SettingsType-RDBSaveChip.cpp
+  SettingsType-RDBYesNo.cpp
+  SettingsType-RelativePath.cpp
+  SettingsType-RomDatabase.cpp
+  SettingsType-RomDatabaseIndex.cpp
+  SettingsType-RomDatabaseSetting.cpp
+  Generating Code...
+  Compiling...
+  SettingsType-SelectedDirectory.cpp
+  SettingsType-TempBool.cpp
+  SettingsType-TempNumber.cpp
+  SettingsType-TempString.cpp
+  stdafx.cpp
+  Generating Code...
+  Project64-core.vcxproj -> D:\Projects\Project64-AP\Source\Project64-core\Debug\Project64-core.lib

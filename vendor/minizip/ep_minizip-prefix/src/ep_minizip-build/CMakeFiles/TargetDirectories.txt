@@ -1,0 +1,4 @@
+D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/minizip.dir
+D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/INSTALL.dir
+D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/ALL_BUILD.dir
+D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/ZERO_CHECK.dir

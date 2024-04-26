@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\test\minigzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2FB7BF21-5A8C-3A2C-946B-8D297663D533}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/Common/CMakeLists.txt
+  CriticalSection.cpp
+  DateTime.cpp
+  DynamicLibrary.cpp
+  File.cpp
+  HighResTimeStamp.cpp
+  IniFile.cpp
+D:\Projects\Project64-AP\Source\Common\IniFile.cpp(507,29): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+  Log.cpp
+  MemTest.cpp
+  MemoryManagement.cpp
+  Platform.cpp
+  Random.cpp
+  StdString.cpp
+  SyncEvent.cpp
+  Thread.cpp
+  Trace.cpp
+  Util.cpp
+  md5.cpp
+D:\Projects\Project64-AP\Source\Common\md5.cpp(198,64): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  path.cpp
+  Generating Code...
+  Common.vcxproj -> D:\Projects\Project64-AP\Source\Common\Debug\Common.lib

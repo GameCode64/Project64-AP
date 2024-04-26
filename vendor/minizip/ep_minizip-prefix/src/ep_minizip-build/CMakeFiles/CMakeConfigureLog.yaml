@@ -1,0 +1,495 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:79 (enable_language)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:79 (enable_language)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+      Build started 26/04/2024 21:38:41.
+      
+      Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\3.29.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\3.29.2\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\3.29.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.54
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/3.29.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (enable_language)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-qccf1e"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-qccf1e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-qccf1e'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_06362.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:42.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-qccf1e\\cmTC_06362.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_06362.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-qccf1e\\Debug\\".
+          Creating directory "cmTC_06362.dir\\Debug\\cmTC_06362.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_06362.dir\\Debug\\cmTC_06362.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_06362.dir\\Debug\\cmTC_06362.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06362.dir\\Debug\\\\" /Fd"cmTC_06362.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06362.dir\\Debug\\\\" /Fd"cmTC_06362.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-qccf1e\\Debug\\cmTC_06362.exe" /INCREMENTAL /ILK:"cmTC_06362.dir\\Debug\\cmTC_06362.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-qccf1e/Debug/cmTC_06362.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-qccf1e/Debug/cmTC_06362.lib" /MACHINE:X64  /machine:x64 cmTC_06362.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_06362.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-qccf1e\\Debug\\cmTC_06362.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_06362.dir\\Debug\\cmTC_06362.tlog\\unsuccessfulbuild".
+          Touching "cmTC_06362.dir\\Debug\\cmTC_06362.tlog\\cmTC_06362.lastbuildstate".
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-qccf1e\\cmTC_06362.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.55
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (enable_language)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (enable_language)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:130 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-bqospj"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-bqospj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-bqospj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_665ad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:42.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\cmTC_665ad.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_665ad.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\Debug\\".
+          Creating directory "cmTC_665ad.dir\\Debug\\cmTC_665ad.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_665ad.dir\\Debug\\cmTC_665ad.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_665ad.dir\\Debug\\cmTC_665ad.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_665ad.dir\\Debug\\\\" /Fd"cmTC_665ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_665ad.dir\\Debug\\\\" /Fd"cmTC_665ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\Debug\\cmTC_665ad.exe" /INCREMENTAL /ILK:"cmTC_665ad.dir\\Debug\\cmTC_665ad.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-bqospj/Debug/cmTC_665ad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-bqospj/Debug/cmTC_665ad.lib" /MACHINE:X64  /machine:x64 cmTC_665ad.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_665ad.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\Debug\\cmTC_665ad.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_665ad.dir\\Debug\\cmTC_665ad.tlog\\unsuccessfulbuild".
+          Touching "cmTC_665ad.dir\\Debug\\cmTC_665ad.tlog\\cmTC_665ad.lastbuildstate".
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-bqospj\\cmTC_665ad.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:131 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-p0sikn"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-p0sikn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-p0sikn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ccfc5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:43.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\cmTC_ccfc5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_ccfc5.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\Debug\\".
+          Creating directory "cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccfc5.dir\\Debug\\\\" /Fd"cmTC_ccfc5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccfc5.dir\\Debug\\\\" /Fd"cmTC_ccfc5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\Debug\\cmTC_ccfc5.exe" /INCREMENTAL /ILK:"cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-p0sikn/Debug/cmTC_ccfc5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-p0sikn/Debug/cmTC_ccfc5.lib" /MACHINE:X64  /machine:x64 cmTC_ccfc5.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_ccfc5.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\Debug\\cmTC_ccfc5.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ccfc5.dir\\Debug\\cmTC_ccfc5.tlog\\cmTC_ccfc5.lastbuildstate".
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-p0sikn\\cmTC_ccfc5.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "CMakeLists.txt:141 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-hk8ihr"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-hk8ihr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-hk8ihr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1dbdd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:44.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\cmTC_1dbdd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1dbdd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\Debug\\".
+          Creating directory "cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1dbdd.dir\\Debug\\\\" /Fd"cmTC_1dbdd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1dbdd.dir\\Debug\\\\" /Fd"cmTC_1dbdd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\Debug\\cmTC_1dbdd.exe" /INCREMENTAL /ILK:"cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-hk8ihr/Debug/cmTC_1dbdd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-hk8ihr/Debug/cmTC_1dbdd.lib" /MACHINE:X64  /machine:x64 cmTC_1dbdd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_1dbdd.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\Debug\\cmTC_1dbdd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1dbdd.dir\\Debug\\cmTC_1dbdd.tlog\\cmTC_1dbdd.lastbuildstate".
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-hk8ihr\\cmTC_1dbdd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:141 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-xiy47m"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-xiy47m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-xiy47m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_edc7d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:45.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\cmTC_edc7d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_edc7d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\Debug\\".
+          Creating directory "cmTC_edc7d.dir\\Debug\\cmTC_edc7d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_edc7d.dir\\Debug\\cmTC_edc7d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_edc7d.dir\\Debug\\cmTC_edc7d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_edc7d.dir\\Debug\\\\" /Fd"cmTC_edc7d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_edc7d.dir\\Debug\\\\" /Fd"cmTC_edc7d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\Debug\\cmTC_edc7d.exe" /INCREMENTAL /ILK:"cmTC_edc7d.dir\\Debug\\cmTC_edc7d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-xiy47m/Debug/cmTC_edc7d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-xiy47m/Debug/cmTC_edc7d.lib" /MACHINE:X64  /machine:x64 cmTC_edc7d.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_edc7d.vcxproj -> D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\Debug\\cmTC_edc7d.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_edc7d.dir\\Debug\\cmTC_edc7d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_edc7d.dir\\Debug\\cmTC_edc7d.tlog\\cmTC_edc7d.lastbuildstate".
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-xiy47m\\cmTC_edc7d.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:141 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ew4u6a"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ew4u6a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ew4u6a'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_48f14.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:46.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_48f14.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\Debug\\".
+          Creating directory "cmTC_48f14.dir\\Debug\\cmTC_48f14.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_48f14.dir\\Debug\\cmTC_48f14.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_48f14.dir\\Debug\\cmTC_48f14.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48f14.dir\\Debug\\\\" /Fd"cmTC_48f14.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48f14.dir\\Debug\\\\" /Fd"cmTC_48f14.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c"
+          OFF64_T.c
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ew4u6a\\cmTC_48f14.vcxproj]
+        
+            0 Warning(s)
+            5 Error(s)
+        
+        Time Elapsed 00:00:00.39
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:147 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ds4ruf"
+      binary: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ds4ruf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip/cmake"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ds4ruf'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fba77.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 26/04/2024 21:38:46.
+        
+        Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_fba77.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\Debug\\".
+          Creating directory "cmTC_fba77.dir\\Debug\\cmTC_fba77.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_fba77.dir\\Debug\\cmTC_fba77.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fba77.dir\\Debug\\cmTC_fba77.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fba77.dir\\Debug\\\\" /Fd"cmTC_fba77.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fba77.dir\\Debug\\\\" /Fd"cmTC_fba77.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\Debug\\cmTC_fba77.exe" /INCREMENTAL /ILK:"cmTC_fba77.dir\\Debug\\cmTC_fba77.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ds4ruf/Debug/cmTC_fba77.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build/CMakeFiles/CMakeScratch/TryCompile-ds4ruf/Debug/cmTC_fba77.lib" /MACHINE:X64  /machine:x64 cmTC_fba77.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj]
+        D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\Debug\\cmTC_fba77.exe : fatal error LNK1120: 1 unresolved externals [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj]
+        Done Building Project "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj]
+          D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\Debug\\cmTC_fba77.exe : fatal error LNK1120: 1 unresolved externals [D:\\Projects\\Project64-AP\\vendor\\minizip\\ep_minizip-prefix\\src\\ep_minizip-build\\CMakeFiles\\CMakeScratch\\TryCompile-ds4ruf\\cmTC_fba77.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.51
+        
+      exitCode: 1
+...

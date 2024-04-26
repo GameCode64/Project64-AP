@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\CMakeFiles\f502b15a6e14bb59eb75a084497429b1\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{66B0D971-FE39-3411-A66A-89B6A9357349}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

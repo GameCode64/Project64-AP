@@ -1,0 +1,52 @@
+﻿  Building Custom Rule D:/Projects/Project64-AP/Source/RSP/CMakeLists.txt
+  Cpu.c
+  Interpreter CPU.c
+D:\Projects\Project64-AP\Source\RSP\Cpu.c(171,1): warning C4142: 'DoRspCycles': benign redefinition of type
+  D:\Projects\Project64-AP\Source\RSP\Rsp.h(122,17):
+  see declaration of 'DoRspCycles'
+  
+D:\Projects\Project64-AP\Source\RSP\Cpu.c(170,49): warning C4028: formal parameter 1 different from declaration
+  Interpreter Ops.c
+  Mmx.c
+  RSP Command.c
+D:\Projects\Project64-AP\Source\RSP\RSP Command.c(270,36): warning C4477: 'sprintf' : format string '%.*s' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+  D:\Projects\Project64-AP\Source\RSP\RSP Command.c(270,36):
+  this argument is used as a precision
+  
+D:\Projects\Project64-AP\Source\RSP\RSP Command.c(275,47): warning C4477: 'sprintf' : format string '%.*s' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+  D:\Projects\Project64-AP\Source\RSP\RSP Command.c(275,47):
+  this argument is used as a precision
+  
+  RSP Register.c
+  Recompiler Analysis.c
+  Recompiler CPU.c
+D:\Projects\Project64-AP\Source\RSP\Recompiler CPU.c(27,16): warning C4142: 'CompilePC': benign redefinition of type
+  D:\Projects\Project64-AP\Source\RSP\Recompiler CPU.h(4,17):
+  see declaration of 'CompilePC'
+  
+D:\Projects\Project64-AP\Source\RSP\Recompiler CPU.c(27,31): warning C4142: 'JumpTableSize': benign redefinition of type
+  D:\Projects\Project64-AP\Source\RSP\Recompiler CPU.h(4,45):
+  see declaration of 'JumpTableSize'
+  
+  Recompiler Ops.c
+D:\Projects\Project64-AP\Source\RSP\Recompiler Ops.c(905,28): warning C4244: 'function': conversion from 'DWORD' to 'BYTE', possible loss of data
+D:\Projects\Project64-AP\Source\RSP\Recompiler Ops.c(921,25): warning C4244: 'function': conversion from 'DWORD' to 'BYTE', possible loss of data
+D:\Projects\Project64-AP\Source\RSP\Recompiler Ops.c(956,29): warning C4244: 'function': conversion from 'DWORD' to 'WORD', possible loss of data
+D:\Projects\Project64-AP\Source\RSP\Recompiler Ops.c(987,25): warning C4244: 'function': conversion from 'DWORD' to 'WORD', possible loss of data
+  Recompiler Sections.c
+  Sse.c
+  X86.c
+D:\Projects\Project64-AP\Source\RSP\X86.c(1149,2): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'DWORD'
+D:\Projects\Project64-AP\Source\RSP\X86.c(1172,2): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'DWORD'
+D:\Projects\Project64-AP\Source\RSP\X86.c(1209,2): warning C4311: 'type cast': pointer truncation from 'uint8_t *' to 'DWORD'
+  breakpoint.c
+  dma.c
+  memory.c
+  Generating Code...
+  Main.cpp
+  Profiling.cpp
+  log.cpp
+  Generating Code...
+     Creating library D:/Projects/Project64-AP/Source/RSP/Debug/RSP 1.7.lib and object D:/Projects/Project64-AP/Source/RSP/Debug/RSP 1.7.exp
+  RSP.vcxproj -> D:\Projects\Project64-AP\Source\RSP\Debug\RSP 1.7.dll
+  Copying RSP

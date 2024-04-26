@@ -1,0 +1,136 @@
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/tmp/ep_zlib-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-DOWNLOAD.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/download-ep_zlib.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/verify-ep_zlib.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/extract-ep_zlib.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-CONFIGURE.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib -B D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-BUILD.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\8ED1D333D85478D24817B986B548E36A\EP_ZLIB-INSTALL.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\B19755A804A477B0E301E332C0E5062F\EP_ZLIB-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/zlib/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/CMakeFiles/Debug/ep_zlib-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/Debug/ep_zlib-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\19B812A6D9E43AE6600ECDC788CA344B\EP_ZLIB.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\VENDOR\ZLIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

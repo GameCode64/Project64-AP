@@ -1,0 +1,7 @@
+D:/Projects/Project64-AP/_vendor/lib/zlibd.lib
+D:/Projects/Project64-AP/_vendor/bin/zlibd.dll
+D:/Projects/Project64-AP/_vendor/lib/zlibstaticd.lib
+D:/Projects/Project64-AP/_vendor/include/zconf.h
+D:/Projects/Project64-AP/_vendor/include/zlib.h
+D:/Projects/Project64-AP/_vendor/share/man/man3/zlib.3
+D:/Projects/Project64-AP/_vendor/share/pkgconfig/zlib.pc

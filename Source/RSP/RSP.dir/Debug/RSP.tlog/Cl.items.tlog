@@ -1,0 +1,18 @@
+D:\Projects\Project64-AP\Source\RSP\Cpu.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Cpu.obj
+D:\Projects\Project64-AP\Source\RSP\Interpreter CPU.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Interpreter CPU.obj
+D:\Projects\Project64-AP\Source\RSP\Interpreter Ops.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Interpreter Ops.obj
+D:\Projects\Project64-AP\Source\RSP\Main.cpp;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Main.obj
+D:\Projects\Project64-AP\Source\RSP\Mmx.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Mmx.obj
+D:\Projects\Project64-AP\Source\RSP\Profiling.cpp;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Profiling.obj
+D:\Projects\Project64-AP\Source\RSP\RSP Command.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\RSP Command.obj
+D:\Projects\Project64-AP\Source\RSP\RSP Register.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\RSP Register.obj
+D:\Projects\Project64-AP\Source\RSP\Recompiler Analysis.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Recompiler Analysis.obj
+D:\Projects\Project64-AP\Source\RSP\Recompiler CPU.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Recompiler CPU.obj
+D:\Projects\Project64-AP\Source\RSP\Recompiler Ops.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Recompiler Ops.obj
+D:\Projects\Project64-AP\Source\RSP\Recompiler Sections.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Recompiler Sections.obj
+D:\Projects\Project64-AP\Source\RSP\Sse.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\Sse.obj
+D:\Projects\Project64-AP\Source\RSP\X86.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\X86.obj
+D:\Projects\Project64-AP\Source\RSP\breakpoint.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\breakpoint.obj
+D:\Projects\Project64-AP\Source\RSP\dma.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\dma.obj
+D:\Projects\Project64-AP\Source\RSP\log.cpp;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\log.obj
+D:\Projects\Project64-AP\Source\RSP\memory.c;D:\Projects\Project64-AP\Source\RSP\RSP.dir\Debug\memory.obj

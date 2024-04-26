@@ -1,0 +1,15 @@
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_crypt.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_crypt.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_os.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_os.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_buf.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_buf.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_mem.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_mem.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_split.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_split.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_zip.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_zip.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_zip_rw.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_zip_rw.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_zlib.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_zlib.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_os_win32.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_os_win32.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_os_win32.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_os_win32.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_crypt_win32.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_crypt_win32.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_pkcrypt.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_pkcrypt.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_strm_wzaes.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_strm_wzaes.obj
+D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip\mz_compat.c;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build\minizip.dir\Debug\mz_compat.obj

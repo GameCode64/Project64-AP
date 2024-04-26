@@ -1,0 +1,7 @@
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/liblua.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/liblua_static.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/lua.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/luac.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/INSTALL.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/ALL_BUILD.dir
+D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build/CMakeFiles/ZERO_CHECK.dir

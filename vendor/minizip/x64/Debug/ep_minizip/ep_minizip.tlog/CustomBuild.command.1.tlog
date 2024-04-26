@@ -1,0 +1,136 @@
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-DOWNLOAD.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-CONFIGURE.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor -DMZ_ZLIB=ON -DMZ_BZIP2=OFF -DMZ_LZMA=OFF -DMZ_ZSTD=OFF -DMZ_FETCH_LIBS=OFF "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -B D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-BUILD.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\DE9F2AB30E8D3BE80385F81BFC55E197\EP_MINIZIP-INSTALL.RULE
+setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\21EAFAD77A0B8DF589DE4382B3A561CE\EP_MINIZIP-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Debug/ep_minizip-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\86D8129B6AEF436666192CACA905DB62\EP_MINIZIP.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECTS\PROJECT64-AP\VENDOR\MINIZIP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

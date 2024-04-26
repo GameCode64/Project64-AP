@@ -1,0 +1,10 @@
+^D:\PROJECTS\PROJECT64-AP\CMAKEFILES\7BDF30EF92B4C927138AE654D4DF77B6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/Project64-AP/Project64-EM.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

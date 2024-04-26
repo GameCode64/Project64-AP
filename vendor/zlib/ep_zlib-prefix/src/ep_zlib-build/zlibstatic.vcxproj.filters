@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib-build\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib-prefix\src\ep_zlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E8D2BA20-131E-33CF-9786-6EFFE0188B5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2FB7BF21-5A8C-3A2C-946B-8D297663D533}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
