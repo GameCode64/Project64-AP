@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/download-ep_lua.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/verify-ep_lua.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/extract-ep_lua.cmake
+source_dir=D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua
+work_dir=D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src
+url(s)=https://www.lua.org/ftp/lua-5.4.4.tar.gz
+hash=
+no_extract=
+

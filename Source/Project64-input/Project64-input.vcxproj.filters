@@ -1,105 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="InputMain.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\CProject64Input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InputConfigUI.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wtl-BitmapPicture.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\DirectInput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CProject64Input.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\InputConfigUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DirectInput.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\InputMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wtl-ScanButton.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\InputSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InputSettings.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\OptionsUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DeviceNotification.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\wtl-BitmapPicture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OptionsUI.cpp">
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-input\wtl-ScanButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ControllerSpec1.1.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\CProject64Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InputConfigUI.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\ControllerSpec1.1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="wtl-BitmapPicture.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\DeviceNotification.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="wtl.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\DirectInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CProject64Input.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\InputConfigUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DirectInput.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\InputSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="wtl-ScanButton.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\InputSettingsID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\N64Controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="N64Controller.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\OptionsUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InputSettings.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\Version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InputSettingsID.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DeviceNotification.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\wtl-BitmapPicture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OptionsUI.h">
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\wtl-ScanButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-input\wtl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Version.h.in">
-      <Filter>Header Files</Filter>
-    </None>
+    <CustomBuild Include="D:\Projects\Project64-AP\Source\Project64-input\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Project64-input.rc">
-      <Filter>Resource Files</Filter>
+    <ResourceCompile Include="D:\Projects\Project64-AP\Source\Project64-input\Project64-input.rc">
+      <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Controller.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{362C5882-A4B9-3AC1-B5EB-34B3AA7713D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E7756D11-BAC0-3A70-80D0-7593A77AF7C3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

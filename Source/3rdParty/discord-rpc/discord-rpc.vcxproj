@@ -1,94 +1,337 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DCC841B2-298A-40F0-84D1-ACBABD3B86E8}</ProjectGuid>
-    <RootNamespace>discord-rpc</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ProjectGuid>{6C4F8845-5835-3A23-854D-7CF0C07AE54F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>discord-rpc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)PropertySheets\Platform.$(Configuration).props" />
-  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">discord-rpc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">discord-rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">discord-rpc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">discord-rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">discord-rpc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">discord-rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">discord-rpc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">discord-rpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader />
-      <WarningLevel>Level4</WarningLevel>
-      <DisableSpecificWarnings>
-      </DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>.\;.\include;$(SolutionDir)\Source;$(SolutionDir)\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="backoff.h" />
-    <ClInclude Include="connection.h" />
-    <ClInclude Include="include\discord_register.h" />
-    <ClInclude Include="include\discord_rpc.h" />
-    <ClInclude Include="msg_queue.h" />
-    <ClInclude Include="rapidjson\allocators.h" />
-    <ClInclude Include="rapidjson\document.h" />
-    <ClInclude Include="rapidjson\encodedstream.h" />
-    <ClInclude Include="rapidjson\encodings.h" />
-    <ClInclude Include="rapidjson\error\en.h" />
-    <ClInclude Include="rapidjson\error\error.h" />
-    <ClInclude Include="rapidjson\filereadstream.h" />
-    <ClInclude Include="rapidjson\filewritestream.h" />
-    <ClInclude Include="rapidjson\fwd.h" />
-    <ClInclude Include="rapidjson\internal\biginteger.h" />
-    <ClInclude Include="rapidjson\internal\diyfp.h" />
-    <ClInclude Include="rapidjson\internal\dtoa.h" />
-    <ClInclude Include="rapidjson\internal\ieee754.h" />
-    <ClInclude Include="rapidjson\internal\itoa.h" />
-    <ClInclude Include="rapidjson\internal\meta.h" />
-    <ClInclude Include="rapidjson\internal\pow10.h" />
-    <ClInclude Include="rapidjson\internal\regex.h" />
-    <ClInclude Include="rapidjson\internal\stack.h" />
-    <ClInclude Include="rapidjson\internal\strfunc.h" />
-    <ClInclude Include="rapidjson\internal\strtod.h" />
-    <ClInclude Include="rapidjson\internal\swap.h" />
-    <ClInclude Include="rapidjson\istreamwrapper.h" />
-    <ClInclude Include="rapidjson\memorybuffer.h" />
-    <ClInclude Include="rapidjson\memorystream.h" />
-    <ClInclude Include="rapidjson\msinttypes\inttypes.h" />
-    <ClInclude Include="rapidjson\msinttypes\stdint.h" />
-    <ClInclude Include="rapidjson\ostreamwrapper.h" />
-    <ClInclude Include="rapidjson\pointer.h" />
-    <ClInclude Include="rapidjson\prettywriter.h" />
-    <ClInclude Include="rapidjson\rapidjson.h" />
-    <ClInclude Include="rapidjson\reader.h" />
-    <ClInclude Include="rapidjson\schema.h" />
-    <ClInclude Include="rapidjson\stream.h" />
-    <ClInclude Include="rapidjson\stringbuffer.h" />
-    <ClInclude Include="rapidjson\writer.h" />
-    <ClInclude Include="rpc_connection.h" />
-    <ClInclude Include="serialization.h" />
+    <CustomBuild Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/discord-rpc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="connection_win.cpp" />
-    <ClCompile Include="discord_register_win.cpp" />
-    <ClCompile Include="discord_rpc.cpp" />
-    <ClCompile Include="rpc_connection.cpp" />
-    <ClCompile Include="serialization.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\backoff.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\connection.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\connection_win.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\discord_register.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\discord_register_win.cpp" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\discord_rpc.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\discord_rpc.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\include\discord_register.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\include\discord_rpc.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\msg_queue.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\allocators.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\document.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\encodedstream.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\encodings.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\error\en.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\error\error.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\filereadstream.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\filewritestream.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\fwd.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\itoa.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\meta.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\pow10.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\regex.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\stack.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\strtod.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\internal\swap.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\memorybuffer.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\memorystream.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\pointer.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\prettywriter.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\rapidjson.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\reader.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\schema.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\stream.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\stringbuffer.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rapidjson\writer.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rpc_connection.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\rpc_connection.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\serialization.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\serialization.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>

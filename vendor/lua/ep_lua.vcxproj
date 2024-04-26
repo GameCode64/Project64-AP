@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E73025AF-DDE3-345D-B29E-0B456D2A834A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ep_lua</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/tmp/ep_lua-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/tmp/ep_lua-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/tmp/ep_lua-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/tmp/ep_lua-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/download-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/verify-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/extract-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\download-ep_lua.cmake;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-urlinfo.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/download-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/verify-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/extract-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\download-ep_lua.cmake;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-urlinfo.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/download-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/verify-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/extract-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\download-ep_lua.cmake;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-urlinfo.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/download-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/verify-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/extract-ep_lua.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\download-ep_lua.cmake;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-urlinfo.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-update-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-update-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-update-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-update-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing patch step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt.in D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-patch-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing patch step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt.in D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-patch-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing patch step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt.in D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-patch-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing patch step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt.in D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\ep_lua-patch-info.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua -B D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-cfgcmd.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua -B D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-cfgcmd.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua -B D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-cfgcmd.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua -B D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-cfgcmd.txt;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\67de4e217b353bf4f29a76ecaae44333\ep_lua-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\1b8d983bdd7a0bc4d7f6d8c548e1e05b\ep_lua-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/lua/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/CMakeFiles/Debug/ep_lua-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Debug/ep_lua-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-install;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-mkdir;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-download;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-update;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-patch;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-configure;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Debug\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\Debug\ep_lua-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/lua/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/CMakeFiles/Release/ep_lua-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/Release/ep_lua-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-install;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-mkdir;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-download;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-update;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-patch;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-configure;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\Release\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\Release\ep_lua-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/lua/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/CMakeFiles/MinSizeRel/ep_lua-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/MinSizeRel/ep_lua-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-install;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-mkdir;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-download;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-update;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-patch;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-configure;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\MinSizeRel\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\MinSizeRel\ep_lua-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'ep_lua'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/lua/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/CMakeFiles/RelWithDebInfo/ep_lua-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/lua/ep_lua-prefix/src/ep_lua-stamp/RelWithDebInfo/ep_lua-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-install;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-mkdir;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-download;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-update;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-patch;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-configure;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\src\ep_lua-stamp\RelWithDebInfo\ep_lua-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\RelWithDebInfo\ep_lua-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\e245593944eae12f5805b572470f3976\ep_lua.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\Debug\ep_lua-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\ep_lua</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\Release\ep_lua-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\ep_lua</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\MinSizeRel\ep_lua-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\ep_lua</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\RelWithDebInfo\ep_lua-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\ep_lua</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\lua\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/lua/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/lua/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/lua/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/lua/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/lua/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\lua\ep_lua-prefix\tmp\ep_lua-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\lua\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\Project64-AP\vendor\lua\CMakeFiles\ep_lua">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

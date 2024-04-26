@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\8ed1d333d85478d24817b986b548e36a\ep_zlib-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\b19755a804a477b0e301e332c0e5062f\ep_zlib-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\19b812a6d9e43ae6600ecdc788ca344b\ep_zlib.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\zlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\Project64-AP\vendor\zlib\CMakeFiles\ep_zlib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C1DC6C3C-84B1-3C68-8C95-03D710FE8C7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

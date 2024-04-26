@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/PatchInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/RepositoryInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/UpdateInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/cfgcmd.txt.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/download.cmake.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/extractfile.cmake.in
+C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/mkdirs.cmake.in
+D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt
+D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake

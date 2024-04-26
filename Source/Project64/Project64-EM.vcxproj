@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{73AD5A11-BFE9-3B30-B236-B0DAE8D80B94}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Project64-EM</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\Project64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Project64-EM.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Project64-EM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\Project64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Project64-EM.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Project64-EM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\Project64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Project64-EM.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Project64-EM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\Project64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Project64-EM.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Project64-EM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying DLLs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/Project64-AP/Source/Project64/Debug/Project64-EM.exe D:/Projects/Project64-AP/_vendor/bin/zlibd.dll D:/Projects/Project64-AP/_vendor/bin/lua54d.dll D:/Projects/Project64-AP/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\3rdParty\discord-rpc\Debug\discord-rpc.lib;..\..\_vendor\lib\zlibd.lib;..\..\_vendor\lib\lua54d.lib;..\..\_vendor\lib\libminizip.lib;..\3rdParty\7zip\Debug\7zip.lib;..\Common\Debug\Common.lib;..\Project64-core\Debug\Project64-core.lib;..\..\_vendor\lib\libminizip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/Project64-AP/Source/Project64/Debug/Project64-EM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/Project64-AP/Source/Project64/Debug/Project64-EM.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying DLLs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/Project64-AP/Source/Project64/Release/Project64-EM.exe D:/Projects/Project64-AP/_vendor/bin/zlib.dll D:/Projects/Project64-AP/_vendor/bin/lua54.dll D:/Projects/Project64-AP/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\3rdParty\discord-rpc\Release\discord-rpc.lib;..\..\_vendor\lib\zlib.lib;..\..\_vendor\lib\lua54.lib;..\..\_vendor\lib\libminizip.lib;..\3rdParty\7zip\Release\7zip.lib;..\Common\Release\Common.lib;..\Project64-core\Release\Project64-core.lib;..\..\_vendor\lib\libminizip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/Project64-AP/Source/Project64/Release/Project64-EM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/Project64-AP/Source/Project64/Release/Project64-EM.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying DLLs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/Project64-AP/Source/Project64/MinSizeRel/Project64-EM.exe D:/Projects/Project64-AP/_vendor/bin/zlib.dll D:/Projects/Project64-AP/_vendor/bin/lua54.dll D:/Projects/Project64-AP/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\3rdParty\discord-rpc\MinSizeRel\discord-rpc.lib;..\..\_vendor\lib\zlib.lib;..\..\_vendor\lib\lua54.lib;..\..\_vendor\lib\libminizip.lib;..\3rdParty\7zip\MinSizeRel\7zip.lib;..\Common\MinSizeRel\Common.lib;..\Project64-core\MinSizeRel\Project64-core.lib;..\..\_vendor\lib\libminizip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/Project64-AP/Source/Project64/MinSizeRel/Project64-EM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/Project64-AP/Source/Project64/MinSizeRel/Project64-EM.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;UNICODE=1;_UNICODE=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\Source\Project64;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying DLLs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/Project64-AP/Source/Project64/RelWithDebInfo/Project64-EM.exe D:/Projects/Project64-AP/_vendor/bin/zlib.dll D:/Projects/Project64-AP/_vendor/bin/lua54.dll D:/Projects/Project64-AP/bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\3rdParty\discord-rpc\RelWithDebInfo\discord-rpc.lib;..\..\_vendor\lib\zlib.lib;..\..\_vendor\lib\lua54.lib;..\..\_vendor\lib\libminizip.lib;..\3rdParty\7zip\RelWithDebInfo\7zip.lib;..\Common\RelWithDebInfo\Common.lib;..\Project64-core\RelWithDebInfo\Project64-core.lib;..\..\_vendor\lib\libminizip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/Project64-AP/Source/Project64/RelWithDebInfo/Project64-EM.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/Project64-AP/Source/Project64/RelWithDebInfo/Project64-EM.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\Source\Project64\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\Project64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\Project64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\Project64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\Project64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\N64System.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\N64System\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\Plugins\PluginList.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\Plugins\PluginList.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\Settings\GuiSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\Settings\GuiSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\Settings\NotificationSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\Settings\NotificationSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\Settings\UISettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\Settings\UISettings.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\Support.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\About.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\About.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\CheatUI.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\CheatUI.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Assembler.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Assembler.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Breakpoints.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Breakpoints.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\CPULog.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\CPULog.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DMALog.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DMALog.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DebugDialog.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DebugMMU.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DebugMMU.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-AddBreakpoint.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-AddBreakpoint.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-AddSymbol.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-AddSymbol.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-CPULogView.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-CPULogView.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Commands.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Commands.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-DMALogView.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-DMALogView.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-ExceptionBreakpoints.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-ExceptionBreakpoints.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-MemoryDump.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-MemoryDump.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-MemorySearch.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-MemorySearch.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-RegisterTabData.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-RegisterTabs.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-RegisterTabs.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Scripts.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Scripts.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-StackTrace.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-StackTrace.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-StackView.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-StackView.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Symbols.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-Symbols.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-TLB.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-TLB.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-ViewMemory.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger-ViewMemory.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Debugger.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\DebuggerUI.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\MemoryScanner.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\MemoryScanner.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\OpInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\ScriptInstance.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\ScriptInstance.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\ScriptInstanceState.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\ScriptSystem.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\ScriptSystem.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Symbols.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\Symbols.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Debugger\debugger.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\DiscordRPC.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\DiscordRPC.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\EnhancementUI.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\EnhancementUI.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\LoggingUI.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\LoggingUI.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MainMenu.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MainMenu.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MainWindow.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MainWindow.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MenuItem.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MenuItem.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MenuShortCuts.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\MenuShortCuts.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Notification.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Notification.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\RomBrowser.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\RomBrowser.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\RomInformation.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\RomInformation.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-AdvancedOptions.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-AdvancedOptions.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Defaults.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Defaults.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Directories.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Directories.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-DiskDrive.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-DiskDrive.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-DiskDrive.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-DiskDrive.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-General.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-General.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Plugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Plugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Recompiler.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Recompiler.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Status.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Game-Status.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-GameBrowser.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-GameBrowser.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-KeyboardShortcuts.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-KeyboardShortcuts.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Options.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Options.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Plugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage-Plugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\Settings\SettingsPage.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\SettingsConfig.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\SettingsConfig.h" />
+    <ResourceCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\UIResources.rc" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\DataArray.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\DragDrop.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\DropArrows.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\ListCombo.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\ListCtrl.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\ListDate.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\ListEdit.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\ListTypes.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ClistCtrl\TitleTip.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\DisplayMode.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\EditNumber32.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\EditNumber32.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\GetCWindowText.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\GetCWindowText.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\HexEditCtrl.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\HexEditCtrl.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ModifiedCheckBox.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ModifiedComboBox.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ModifiedEditBox.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\ModifiedEditBox.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\PartialGroupBox.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\PartialGroupBox.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\TooltipDialog.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\wtl-BitmapPicture.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WTLControls\wtl-BitmapPicture.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WelcomeScreen.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\WelcomeScreen.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\UserInterface\resource.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\WTLApp.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\main.cpp" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64\stdafx.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zip.vcxproj">
+      <Project>{FF9B7475-AA4F-3531-98B6-A115AD23436C}</Project>
+      <Name>7zip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\Source\Common\Common.vcxproj">
+      <Project>{F879F7F9-37FB-34A4-B365-EDF8C98C1117}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\Source\Project64-core\Project64-core.vcxproj">
+      <Project>{FCEA4681-2906-3210-BB9B-929E665BB5D0}</Project>
+      <Name>Project64-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\Source\3rdParty\discord-rpc\discord-rpc.vcxproj">
+      <Project>{6C4F8845-5835-3A23-854D-7CF0C07AE54F}</Project>
+      <Name>discord-rpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\vendor\lua\ep_lua.vcxproj">
+      <Project>{E73025AF-DDE3-345D-B29E-0B456D2A834A}</Project>
+      <Name>ep_lua</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\vendor\minizip\ep_minizip.vcxproj">
+      <Project>{1FD76D68-F29B-38C4-9FF7-D0C4031EB3A5}</Project>
+      <Name>ep_minizip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib.vcxproj">
+      <Project>{469E5E18-21F5-387C-8F3A-1E9C50874087}</Project>
+      <Name>ep_zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

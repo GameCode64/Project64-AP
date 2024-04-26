@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FD76D68-F29B-38C4-9FF7-D0C4031EB3A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ep_minizip</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/tmp/ep_minizip-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\download-ep_minizip.cmake;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-urlinfo.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\download-ep_minizip.cmake;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-urlinfo.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\download-ep_minizip.cmake;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-urlinfo.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\download-ep_minizip.cmake;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-urlinfo.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-update-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-update-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-update-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-update-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-patch-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-patch-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-patch-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\ep_minizip-patch-info.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor -DMZ_ZLIB=ON -DMZ_BZIP2=OFF -DMZ_LZMA=OFF -DMZ_ZSTD=OFF -DMZ_FETCH_LIBS=OFF "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -B D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-cfgcmd.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor -DMZ_ZLIB=ON -DMZ_BZIP2=OFF -DMZ_LZMA=OFF -DMZ_ZSTD=OFF -DMZ_FETCH_LIBS=OFF "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -B D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-cfgcmd.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor -DMZ_ZLIB=ON -DMZ_BZIP2=OFF -DMZ_LZMA=OFF -DMZ_ZSTD=OFF -DMZ_FETCH_LIBS=OFF "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -B D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-cfgcmd.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=D:/Projects/Project64-AP/_vendor -DMZ_ZLIB=ON -DMZ_BZIP2=OFF -DMZ_LZMA=OFF -DMZ_ZSTD=OFF -DMZ_FETCH_LIBS=OFF "-GVisual Studio 17 2022" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Professional" -S D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip -B D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-cfgcmd.txt;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\de9f2ab30e8d3be80385f81bfc55e197\ep_minizip-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\21eafad77a0b8df589de4382b3a561ce\ep_minizip-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Debug/ep_minizip-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Debug/ep_minizip-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-install;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-mkdir;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-download;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-update;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-patch;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-configure;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Debug\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\Debug\ep_minizip-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/Release/ep_minizip-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/Release/ep_minizip-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-install;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-mkdir;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-download;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-update;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-patch;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-configure;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\Release\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\Release\ep_minizip-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/MinSizeRel/ep_minizip-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/MinSizeRel/ep_minizip-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-install;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-mkdir;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-download;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-update;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-patch;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-configure;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\MinSizeRel\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\MinSizeRel\ep_minizip-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'ep_minizip'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/RelWithDebInfo/ep_minizip-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/RelWithDebInfo/ep_minizip-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-install;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-mkdir;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-download;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-update;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-patch;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-configure;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\src\ep_minizip-stamp\RelWithDebInfo\ep_minizip-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\RelWithDebInfo\ep_minizip-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\CMakeFiles\86d8129b6aef436666192caca905db62\ep_minizip.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\Debug\ep_minizip-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\ep_minizip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\Release\ep_minizip-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\ep_minizip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\MinSizeRel\ep_minizip-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\ep_minizip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\RelWithDebInfo\ep_minizip-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\ep_minizip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\Project64-AP\vendor\minizip\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/vendor/minizip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;D:\Projects\Project64-AP\vendor\minizip\ep_minizip-prefix\tmp\ep_minizip-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\Project64-AP\vendor\minizip\CMakeFiles\ep_minizip">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\Project64-AP\vendor\zlib\ep_zlib.vcxproj">
+      <Project>{469E5E18-21F5-387C-8F3A-1E9C50874087}</Project>
+      <Name>ep_zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

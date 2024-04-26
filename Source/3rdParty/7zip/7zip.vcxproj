@@ -1,112 +1,351 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3326E128-33AF-422C-BB7C-67CC6B915610}</ProjectGuid>
-    <RootNamespace>7zip</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ProjectGuid>{FF9B7475-AA4F-3531-98B6-A115AD23436C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>7zip</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)PropertySheets\Platform.$(Configuration).props" />
-  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">7zip.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">7zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">7zip.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">7zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">7zip.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">7zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">7zip.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">7zip</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader />
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <DisableSpecificWarnings>4127;4456;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="7z.h" />
-    <ClInclude Include="7zAlloc.h" />
-    <ClInclude Include="7zBuf.h" />
-    <ClInclude Include="7zCrc.h" />
-    <ClInclude Include="7zFile.h" />
-    <ClInclude Include="7zTypes.h" />
-    <ClInclude Include="7zVersion.h" />
-    <ClInclude Include="Alloc.h" />
-    <ClInclude Include="Bcj2.h" />
-    <ClInclude Include="Bra.h" />
-    <ClInclude Include="CpuArch.h" />
-    <ClInclude Include="Delta.h" />
-    <ClInclude Include="LzFind.h" />
-    <ClInclude Include="LzFindMt.h" />
-    <ClInclude Include="LzHash.h" />
-    <ClInclude Include="Lzma2Dec.h" />
-    <ClInclude Include="Lzma2Enc.h" />
-    <ClInclude Include="Lzma86.h" />
-    <ClInclude Include="LzmaDec.h" />
-    <ClInclude Include="LzmaEnc.h" />
-    <ClInclude Include="LzmaLib.h" />
-    <ClInclude Include="MtCoder.h" />
-    <ClInclude Include="Ppmd.h" />
-    <ClInclude Include="Ppmd7.h" />
-    <ClInclude Include="RotateDefs.h" />
-    <ClInclude Include="Sha256.h" />
-    <ClInclude Include="Threads.h" />
-    <ClInclude Include="Types.h" />
-    <ClInclude Include="Xz.h" />
-    <ClInclude Include="XzCrc64.h" />
-    <ClInclude Include="XzEnc.h" />
+    <CustomBuild Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/3rdParty/7zip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\3rdParty\7zip\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7zAlloc.c" />
-    <ClCompile Include="7zBuf.c" />
-    <ClCompile Include="7zBuf2.c" />
-    <ClCompile Include="7zCrc.c" />
-    <ClCompile Include="7zCrcOpt.c" />
-    <ClCompile Include="7zDec.c" />
-    <ClCompile Include="7zFile.c" />
-    <ClCompile Include="7zIn.c" />
-    <ClCompile Include="7zStream.c" />
-    <ClCompile Include="Alloc.c" />
-    <ClCompile Include="Bcj2.c" />
-    <ClCompile Include="Bra.c" />
-    <ClCompile Include="Bra86.c" />
-    <ClCompile Include="BraIA64.c" />
-    <ClCompile Include="CpuArch.c" />
-    <ClCompile Include="Delta.c" />
-    <ClCompile Include="LzFind.c" />
-    <ClCompile Include="LzFindMt.c" />
-    <ClCompile Include="Lzma2Dec.c" />
-    <ClCompile Include="Lzma2Enc.c" />
-    <ClCompile Include="Lzma86Dec.c" />
-    <ClCompile Include="Lzma86Enc.c" />
-    <ClCompile Include="LzmaDec.c" />
-    <ClCompile Include="LzmaEnc.c" />
-    <ClCompile Include="LzmaLib.c" />
-    <ClCompile Include="MtCoder.c" />
-    <ClCompile Include="Ppmd7.c" />
-    <ClCompile Include="Ppmd7Dec.c" />
-    <ClCompile Include="Ppmd7Enc.c" />
-    <ClCompile Include="Sha256.c" />
-    <ClCompile Include="Threads.c" />
-    <ClCompile Include="Xz.c" />
-    <ClCompile Include="XzCrc64.c" />
-    <ClCompile Include="XzDec.c" />
-    <ClCompile Include="XzEnc.c" />
-    <ClCompile Include="XzIn.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7z.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zAlloc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zAlloc.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zBuf.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zBuf.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zBuf2.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zCrc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zCrc.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zCrcOpt.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zDec.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zFile.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zFile.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zIn.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zStream.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zTypes.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\7zVersion.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Alloc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Alloc.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Bcj2.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Bcj2.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Bra.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Bra.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Bra86.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\BraIA64.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\CpuArch.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\CpuArch.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Delta.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Delta.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzFind.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzFind.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzFindMt.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzFindMt.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzHash.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma2Dec.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma2Dec.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma2Enc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma2Enc.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma86.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma86Dec.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Lzma86Enc.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaDec.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaDec.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaEnc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaEnc.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaLib.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\LzmaLib.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\MtCoder.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\MtCoder.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Ppmd.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Ppmd7.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Ppmd7.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Ppmd7Dec.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Ppmd7Enc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\RotateDefs.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Sha256.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Sha256.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Threads.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Threads.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Types.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Xz.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\Xz.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzCrc64.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzCrc64.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzDec.c" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzEnc.c" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzEnc.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\3rdParty\7zip\XzIn.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>

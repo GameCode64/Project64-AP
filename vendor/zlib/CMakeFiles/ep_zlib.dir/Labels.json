@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Projects/Project64-AP/vendor/zlib/CMakeFiles/ep_zlib"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/19b812a6d9e43ae6600ecdc788ca344b/ep_zlib.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/b19755a804a477b0e301e332c0e5062f/ep_zlib-complete.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-build.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-configure.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-download.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-install.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-mkdir.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-patch.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/8ed1d333d85478d24817b986b548e36a/ep_zlib-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ep_zlib"
+		],
+		"name" : "ep_zlib"
+	}
+}

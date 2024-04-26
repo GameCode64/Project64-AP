@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/download-ep_minizip.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/verify-ep_minizip.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip-stamp/extract-ep_minizip.cmake
+source_dir=D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src/ep_minizip
+work_dir=D:/Projects/Project64-AP/vendor/minizip/ep_minizip-prefix/src
+url(s)=https://github.com/zlib-ng/minizip-ng/archive/refs/tags/3.0.10.tar.gz
+hash=
+no_extract=
+

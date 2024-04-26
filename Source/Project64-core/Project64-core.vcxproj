@@ -1,252 +1,502 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{00C7B43A-DED7-4DF0-B072-9A5783EF866D}</ProjectGuid>
-    <RootNamespace>Project64core</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ProjectGuid>{FCEA4681-2906-3210-BB9B-929E665BB5D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Project64-core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)PropertySheets\Platform.$(Configuration).props" />
-  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ItemDefinitionGroup>
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Source\Script\UpdateVersion.cmd" "$(Configuration)" "$(Platform)" "$(SolutionDir)Source\Project64-core\Version.h.in" "$(SolutionDir)Source\Project64-core\Version.h"</Command>
-    </PreBuildEvent>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\Project64-core\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Project64-core.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Project64-core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\Project64-core\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Project64-core.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Project64-core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\Project64-core\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Project64-core.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Project64-core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\Project64-core\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Project64-core.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Project64-core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Projects/Project64-AP/_vendor/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5208</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;WIN32_LEAN_AND_MEAN=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\Project64-AP\Source\3rdParty;D:\Projects\Project64-AP\Source;D:\Projects\Project64-AP\_vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="3rdParty\7zip.cpp">
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="AppInit.cpp" />
-    <ClCompile Include="Logging.cpp" />
-    <ClCompile Include="MemoryExceptionFilter.cpp" />
-    <ClCompile Include="Multilanguage\Language.cpp" />
-    <ClCompile Include="N64System\EmulationThread.cpp" />
-    <ClCompile Include="N64System\Enhancement\Enhancement.cpp" />
-    <ClCompile Include="N64System\Enhancement\EnhancementFile.cpp" />
-    <ClCompile Include="N64System\Enhancement\EnhancementList.cpp" />
-    <ClCompile Include="N64System\Enhancement\Enhancements.cpp" />
-    <ClCompile Include="N64System\FramePerSecond.cpp" />
-    <ClCompile Include="N64System\Interpreter\InterpreterCPU.cpp" />
-    <ClCompile Include="N64System\Interpreter\InterpreterOps.cpp" />
-    <ClCompile Include="N64System\Interpreter\InterpreterOps32.cpp" />
-    <ClCompile Include="N64System\Mips\Audio.cpp" />
-    <ClCompile Include="N64System\Mips\Disk.cpp" />
-    <ClCompile Include="N64System\Mips\Dma.cpp" />
-    <ClCompile Include="N64System\Mips\Eeprom.cpp" />
-    <ClCompile Include="N64System\Mips\FlashRam.cpp" />
-    <ClCompile Include="N64System\Mips\GBCart.cpp" />
-    <ClCompile Include="N64System\Mips\MemoryVirtualMem.cpp" />
-    <ClCompile Include="N64System\Mips\Mempak.cpp" />
-    <ClCompile Include="N64System\Mips\OpcodeName.cpp" />
-    <ClCompile Include="N64System\Mips\PifRam.cpp" />
-    <ClCompile Include="N64System\Mips\Register.cpp" />
-    <ClCompile Include="N64System\Mips\Rumblepak.cpp" />
-    <ClCompile Include="N64System\Mips\Sram.cpp" />
-    <ClCompile Include="N64System\Mips\SystemEvents.cpp" />
-    <ClCompile Include="N64System\Mips\SystemTiming.cpp" />
-    <ClCompile Include="N64System\Mips\TLB.cpp" />
-    <ClCompile Include="N64System\Mips\Transferpak.cpp" />
-    <ClCompile Include="N64System\N64Disk.cpp" />
-    <ClCompile Include="N64System\N64Rom.cpp" />
-    <ClCompile Include="N64System\N64System.cpp" />
-    <ClCompile Include="N64System\Profiling.cpp" />
-    <ClCompile Include="N64System\Recompiler\Arm\ArmOps.cpp" />
-    <ClCompile Include="N64System\Recompiler\Arm\ArmRecompilerOps.cpp" />
-    <ClCompile Include="N64System\Recompiler\Arm\ArmRegInfo.cpp" />
-    <ClCompile Include="N64System\Recompiler\CodeBlock.cpp" />
-    <ClCompile Include="N64System\Recompiler\CodeSection.cpp" />
-    <ClCompile Include="N64System\Recompiler\FunctionInfo.cpp" />
-    <ClCompile Include="N64System\Recompiler\FunctionMap.cpp" />
-    <ClCompile Include="N64System\Recompiler\LoopAnalysis.cpp" />
-    <ClCompile Include="N64System\Recompiler\Recompiler.cpp" />
-    <ClCompile Include="N64System\Recompiler\RecompilerCodeLog.cpp" />
-    <ClCompile Include="N64System\Recompiler\RecompilerMemory.cpp" />
-    <ClCompile Include="N64System\Recompiler\RegBase.cpp" />
-    <ClCompile Include="N64System\Recompiler\SectionInfo.cpp" />
-    <ClCompile Include="N64System\Recompiler\x86\x86ops.cpp" />
-    <ClCompile Include="N64System\Recompiler\x86\x86RecompilerOps.cpp" />
-    <ClCompile Include="N64System\Recompiler\x86\x86RegInfo.cpp" />
-    <ClCompile Include="N64System\SpeedLimiter.cpp" />
-    <ClCompile Include="N64System\SystemGlobals.cpp" />
-    <ClCompile Include="Plugins\AudioPlugin.cpp" />
-    <ClCompile Include="Plugins\ControllerPlugin.cpp" />
-    <ClCompile Include="Plugins\GFXPlugin.cpp" />
-    <ClCompile Include="Plugins\Plugin.cpp" />
-    <ClCompile Include="Plugins\PluginBase.cpp" />
-    <ClCompile Include="Plugins\RSPPlugin.cpp" />
-    <ClCompile Include="RomList\RomList.cpp" />
-    <ClCompile Include="Settings.cpp" />
-    <ClCompile Include="Settings\DebugSettings.cpp" />
-    <ClCompile Include="Settings\GameSettings.cpp" />
-    <ClCompile Include="Settings\LoggingSettings.cpp" />
-    <ClCompile Include="Settings\N64SystemSettings.cpp" />
-    <ClCompile Include="Settings\RecompilerSettings.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-Application.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-ApplicationIndex.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-ApplicationPath.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-GameSetting.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-GameSettingIndex.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RDBCpuType.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RDBOnOff.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RDBRamSize.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RDBSaveChip.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RDBYesNo.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RelativePath.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RomDatabase.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RomDatabaseIndex.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-RomDatabaseSetting.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-SelectedDirectory.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-TempBool.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-TempNumber.cpp" />
-    <ClCompile Include="Settings\SettingType\SettingsType-TempString.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
+    <CustomBuild Include="D:\Projects\Project64-AP\Source\Project64-core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\Project64-core\Version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Project64-AP\Source\Project64-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\Project64-core\Version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Project64-AP\Source\Project64-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\Project64-core\Version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Project64-AP\Source\Project64-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Project64-AP/Source/Project64-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/Project64-AP -BD:/Projects/Project64-AP --check-stamp-file D:/Projects/Project64-AP/Source/Project64-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\Project64-core\Version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Project64-AP\Source\Project64-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\3rdParty\zlib\contrib\minizip\unzip.h" />
-    <ClInclude Include="..\3rdParty\zlib\contrib\minizip\zip.h" />
-    <ClInclude Include="..\3rdParty\zlib\zconf.h" />
-    <ClInclude Include="..\3rdParty\zlib\zlib.h" />
-    <ClInclude Include="3rdParty\7zip.h" />
-    <ClInclude Include="3rdParty\zip.h" />
-    <ClInclude Include="AppInit.h" />
-    <ClInclude Include="Debugger.h" />
-    <ClInclude Include="ExceptionHandler.h" />
-    <ClInclude Include="Logging.h" />
-    <ClInclude Include="Multilanguage.h" />
-    <ClInclude Include="Multilanguage\Language.h" />
-    <ClInclude Include="N64System\Enhancement\Enhancement.h" />
-    <ClInclude Include="N64System\Enhancement\EnhancementFile.h" />
-    <ClInclude Include="N64System\Enhancement\EnhancementList.h" />
-    <ClInclude Include="N64System\Enhancement\Enhancements.h" />
-    <ClInclude Include="N64System\FramePerSecond.h" />
-    <ClInclude Include="N64System\Interpreter\InterpreterCPU.h" />
-    <ClInclude Include="N64System\Interpreter\InterpreterOps32.h" />
-    <ClInclude Include="N64System\Interpreter\InterpreterOps.h" />
-    <ClInclude Include="N64System\Mips\Audio.h" />
-    <ClInclude Include="N64System\Mips\Disk.h" />
-    <ClInclude Include="N64System\Mips\Dma.h" />
-    <ClInclude Include="N64System\Mips\Eeprom.h" />
-    <ClInclude Include="N64System\Mips\FlashRam.h" />
-    <ClInclude Include="N64System\Mips\GBCart.h" />
-    <ClInclude Include="N64System\Mips\MemoryVirtualMem.h" />
-    <ClInclude Include="N64System\Mips\Mempak.h" />
-    <ClInclude Include="N64System\Mips\OpCode.h" />
-    <ClInclude Include="N64System\Mips\OpcodeName.h" />
-    <ClInclude Include="N64System\Mips\PifRam.h" />
-    <ClInclude Include="N64System\Mips\Register.h" />
-    <ClInclude Include="N64System\Mips\Rumblepak.h" />
-    <ClInclude Include="N64System\Mips\Sram.h" />
-    <ClInclude Include="N64System\Mips\SystemEvents.h" />
-    <ClInclude Include="N64System\Mips\SystemTiming.h" />
-    <ClInclude Include="N64System\Mips\TLB.h" />
-    <ClInclude Include="N64System\Mips\Transferpak.h" />
-    <ClInclude Include="N64System\Mips\TranslateVaddr.h" />
-    <ClInclude Include="N64System\N64Disk.h" />
-    <ClInclude Include="N64System\N64Rom.h" />
-    <ClInclude Include="N64System\N64System.h" />
-    <ClInclude Include="N64System\N64Types.h" />
-    <ClInclude Include="N64System\Profiling.h" />
-    <ClInclude Include="N64System\Recompiler\Arm\ArmOpCode.h" />
-    <ClInclude Include="N64System\Recompiler\Arm\ArmOps.h" />
-    <ClInclude Include="N64System\Recompiler\Arm\ArmRecompilerOps.h" />
-    <ClInclude Include="N64System\Recompiler\Arm\ArmRegInfo.h" />
-    <ClInclude Include="N64System\Recompiler\CodeBlock.h" />
-    <ClInclude Include="N64System\Recompiler\CodeSection.h" />
-    <ClInclude Include="N64System\Recompiler\ExitInfo.h" />
-    <ClInclude Include="N64System\Recompiler\FunctionInfo.h" />
-    <ClInclude Include="N64System\Recompiler\FunctionMap.h" />
-    <ClInclude Include="N64System\Recompiler\JumpInfo.h" />
-    <ClInclude Include="N64System\Recompiler\LoopAnalysis.h" />
-    <ClInclude Include="N64System\Recompiler\RecompilerCodeLog.h" />
-    <ClInclude Include="N64System\Recompiler\RecompilerMemory.h" />
-    <ClInclude Include="N64System\Recompiler\RecompilerOps.h" />
-    <ClInclude Include="N64System\Recompiler\RegBase.h" />
-    <ClInclude Include="N64System\Recompiler\RegInfo.h" />
-    <ClInclude Include="N64System\Recompiler\SectionInfo.h" />
-    <ClInclude Include="N64System\Recompiler\x64-86\x64RegInfo.h" />
-    <ClInclude Include="N64System\Recompiler\x86\x86ops.h" />
-    <ClInclude Include="N64System\Recompiler\x86\x86RecompilerOps.h" />
-    <ClInclude Include="N64System\Recompiler\x86\x86RegInfo.h" />
-    <ClInclude Include="N64System\SpeedLimiter.h" />
-    <ClInclude Include="N64System\SystemGlobals.h" />
-    <ClInclude Include="Notification.h" />
-    <ClInclude Include="Plugin.h" />
-    <ClInclude Include="Plugins\AudioPlugin.h" />
-    <ClInclude Include="Plugins\ControllerPlugin.h" />
-    <ClInclude Include="Plugins\GFXPlugin.h" />
-    <ClInclude Include="Plugins\Plugin.h" />
-    <ClInclude Include="Plugins\PluginBase.h" />
-    <ClInclude Include="Plugins\RSPPlugin.h" />
-    <ClInclude Include="RomList\RomList.h" />
-    <ClInclude Include="Settings.h" />
-    <ClInclude Include="Settings\DebugSettings.h" />
-    <ClInclude Include="Settings\GameSettings.h" />
-    <ClInclude Include="Settings\LoggingSettings.h" />
-    <ClInclude Include="Settings\N64SystemSettings.h" />
-    <ClInclude Include="Settings\RecompilerSettings.h" />
-    <ClInclude Include="Settings\SettingsID.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-Application.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-ApplicationIndex.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-ApplicationPath.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-Base.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-GameSetting.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-GameSettingIndex.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RDBCpuType.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RDBOnOff.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RDBRamSize.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RDBSaveChip.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RDBYesNo.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RelativePath.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RomDatabase.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RomDatabaseIndex.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RomDatabaseSetting.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-RomSetting.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-SelectedDirectory.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-TempBool.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-TempNumber.h" />
-    <ClInclude Include="Settings\SettingType\SettingsType-TempString.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="TraceModulesProject64.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\3rdParty\7zip.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\3rdParty\7zip.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\3rdParty\zip.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\AppInit.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\AppInit.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Debugger.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\ExceptionHandler.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Logging.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Logging.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\MemoryExceptionFilter.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Multilanguage.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Multilanguage\Language.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Multilanguage\Language.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Multilanguage\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\EmulationThread.cpp" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\Enhancement.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\Enhancement.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementFile.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementFile.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementList.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\EnhancementList.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\Enhancements.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\Enhancements.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Enhancement\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\FramePerSecond.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\FramePerSecond.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterCPU.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterCPU.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterOps.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterOps.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterOps32.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\InterpreterOps32.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Interpreter\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Audio.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Audio.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Disk.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Disk.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Dma.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Dma.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Eeprom.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Eeprom.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\FlashRam.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\FlashRam.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\GBCart.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\GBCart.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\MemoryVirtualMem.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\MemoryVirtualMem.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Mempak.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Mempak.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\OpCode.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\OpcodeName.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\OpcodeName.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\PifRam.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\PifRam.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Register.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Register.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Rumblepak.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Rumblepak.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Sram.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\SystemEvents.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\SystemEvents.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\SystemTiming.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\SystemTiming.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\TLB.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\TLB.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Transferpak.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\Transferpak.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\TranslateVaddr.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Mips\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64Disk.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64Disk.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64Rom.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64Rom.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64System.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\N64Types.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Profiling.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Profiling.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmOpCode.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmOps.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmOps.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmRecompilerOps.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmRecompilerOps.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmRegInfo.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\ArmRegInfo.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Arm\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\CodeBlock.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\CodeBlock.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\CodeSection.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\CodeSection.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\ExitInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\FunctionInfo.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\FunctionInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\FunctionMap.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\FunctionMap.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\JumpInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\LoopAnalysis.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\LoopAnalysis.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\Recompiler.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerCodeLog.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerCodeLog.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerMemory.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerMemory.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RecompilerOps.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RegBase.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RegBase.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\RegInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\SectionInfo.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\SectionInfo.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\stdafx.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x64-86\stdafx.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x64-86\x64RegInfo.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86RecompilerOps.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86RecompilerOps.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86RegInfo.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86RegInfo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86ops.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\Recompiler\x86\x86ops.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\SpeedLimiter.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\SpeedLimiter.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\SystemGlobals.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\SystemGlobals.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\N64System\stdafx.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Notification.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\AudioPlugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\AudioPlugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\ControllerPlugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\ControllerPlugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\GFXPlugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\GFXPlugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\Plugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\Plugin.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\PluginBase.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\PluginBase.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\RSPPlugin.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\RSPPlugin.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Plugins\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\RomList\RomList.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\RomList\stdafx.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\DebugSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\DebugSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\GameSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\GameSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\LoggingSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\LoggingSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\N64SystemSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\N64SystemSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\RecompilerSettings.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\RecompilerSettings.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-Application.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-Application.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-ApplicationIndex.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-ApplicationIndex.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-ApplicationPath.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-ApplicationPath.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-Base.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-GameSetting.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-GameSetting.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-GameSettingIndex.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-GameSettingIndex.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBCpuType.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBCpuType.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBOnOff.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBOnOff.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBRamSize.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBRamSize.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBSaveChip.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBSaveChip.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBYesNo.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RDBYesNo.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RelativePath.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RelativePath.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabase.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabase.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabaseIndex.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabaseIndex.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabaseSetting.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomDatabaseSetting.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-RomSetting.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-SelectedDirectory.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-SelectedDirectory.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempBool.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempBool.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempNumber.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempNumber.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempString.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\SettingsType-TempString.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingType\stdafx.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingsID.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\stdafx.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\TraceModulesProject64.h" />
+    <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\stdafx.cpp" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\3rdParty\zlib\zlib.vcxproj">
-      <Project>{731bd205-2826-4631-b7af-117658e88dbc}</Project>
+    <ProjectReference Include="D:\Projects\Project64-AP\ZERO_CHECK.vcxproj">
+      <Project>{BA10C406-CF69-3559-BD42-0FDBAF78DF67}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="..\3rdParty\7zip\7zip.vcxproj">
-      <Project>{3326e128-33af-422c-bb7c-67cc6b915610}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Common\Common.vcxproj" />
-    <ProjectReference Include="..\UpdateVersion\UpdateVersion.vcxproj">
-      <Project>{1968162c-0793-491d-91a1-81645a24d399}</Project>
+    <ProjectReference Include="D:\Projects\Project64-AP\vendor\minizip\ep_minizip.vcxproj">
+      <Project>{1FD76D68-F29B-38C4-9FF7-D0C4031EB3A5}</Project>
+      <Name>ep_minizip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Version.h.in" />
-  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>

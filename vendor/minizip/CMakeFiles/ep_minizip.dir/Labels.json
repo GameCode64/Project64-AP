@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Projects/Project64-AP/vendor/minizip/CMakeFiles/ep_minizip"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/86d8129b6aef436666192caca905db62/ep_minizip.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/21eafad77a0b8df589de4382b3a561ce/ep_minizip-complete.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-build.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-configure.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-download.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-install.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-mkdir.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-patch.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/de9f2ab30e8d3be80385f81bfc55e197/ep_minizip-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ep_minizip"
+		],
+		"name" : "ep_minizip"
+	}
+}

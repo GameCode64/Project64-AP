@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Projects/Project64-AP/vendor/lua/CMakeFiles/ep_lua"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/e245593944eae12f5805b572470f3976/ep_lua.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/1b8d983bdd7a0bc4d7f6d8c548e1e05b/ep_lua-complete.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-build.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-configure.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-download.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-install.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-mkdir.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-patch.rule"
+		},
+		{
+			"file" : "D:/Projects/Project64-AP/CMakeFiles/67de4e217b353bf4f29a76ecaae44333/ep_lua-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ep_lua"
+		],
+		"name" : "ep_lua"
+	}
+}
