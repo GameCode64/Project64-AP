@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/zlib-1.2.13.tar.gz" ABSOLUTE)
+get_filename_component(filename "D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/zlib-1.3.1.tar.gz" ABSOLUTE)
 get_filename_component(directory "D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib" ABSOLUTE)
 
 message(STATUS "extracting...

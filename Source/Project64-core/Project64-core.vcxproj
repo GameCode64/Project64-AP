@@ -479,6 +479,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\SettingsID.h" />
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Settings\stdafx.h" />
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\TraceModulesProject64.h" />
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Version.h" />
     <ClCompile Include="D:\Projects\Project64-AP\Source\Project64-core\stdafx.cpp" />
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\stdafx.h" />
   </ItemGroup>

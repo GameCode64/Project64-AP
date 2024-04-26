@@ -6,7 +6,7 @@ method=url
 command=C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/download-ep_zlib.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/verify-ep_zlib.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-P;D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib-stamp/extract-ep_zlib.cmake
 source_dir=D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src/ep_zlib
 work_dir=D:/Projects/Project64-AP/vendor/zlib/ep_zlib-prefix/src
-url(s)=https://zlib.net/zlib-1.2.13.tar.gz
+url(s)=https://zlib.net/zlib-1.3.1.tar.gz
 hash=
 no_extract=
 

@@ -600,6 +600,9 @@
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\TraceModulesProject64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="D:\Projects\Project64-AP\Source\Project64-core\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
